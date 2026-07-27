@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 1: Konsep Dasar Informatika - Kelas XII</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#f0f9ff",
+                100: "#e0f2fe",
+                500: "#0284c7",
+                600: "#0369a1",
+                700: "#075985",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Font Plus Jakarta Sans & Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between"
+  >
+    <!-- Header / Navbar -->
+    <header
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="bg-brand-600 text-white p-2 rounded-xl flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-xl">code_blocks</span>
+          </div>
+          <div>
+            <span
+              class="font-bold text-lg text-slate-900 tracking-tight block leading-none"
+              >Informatika XII</span
+            >
+            <span
+              class="text-[10px] text-brand-600 font-semibold uppercase tracking-wider"
+              >Bagian A: Informatika</span
+            >
+          </div>
+          <span
+            class="bg-sky-100 text-sky-800 text-xs font-bold px-2.5 py-0.5 rounded-full ml-2"
+            >Fase F</span
+          >
+        </div>
+        <nav class="hidden md:flex gap-6 text-sm font-semibold text-slate-600">
+          <a href="#definisi" class="hover:text-brand-600 transition"
+            >Definisi</a
+          >
+          <a href="#cabang" class="hover:text-brand-600 transition"
+            >4 Cakupan Utama</a
+          >
+          <a href="#aspek" class="hover:text-brand-600 transition"
+            >6 Aspek Praktis</a
+          >
+          <a href="#pjj" class="hover:text-brand-600 transition">Konteks PJJ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-slate-900 text-white overflow-hidden py-16 px-4"
+    >
+      <div class="absolute inset-0 opacity-30">
+        <img
+          src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1600&q=80"
+          alt="Code & Technology"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/95 to-transparent"
+      ></div>
+
+      <div
+        class="relative max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8"
+      >
+        <div class="space-y-4 md:w-3/4">
+          <span
+            class="bg-brand-500/20 text-brand-300 border border-brand-400/30 text-xs font-bold px-3 py-1 rounded-full inline-flex items-center gap-1 uppercase tracking-wider"
+          >
+            <span class="material-symbols-outlined text-sm">terminal</span>
+            Modul Pembelajaran Bagian A
+          </span>
+          <h1
+            class="text-3xl md:text-5xl font-extrabold leading-tight text-white"
+          >
+            Memahami Fondasi
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-cyan-300"
+              >Informatika</span
+            >
+          </h1>
+          <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            Pengolahan data berbasis komputer, cabang keilmuan, aspek praktis,
+            dan perannya dalam mendukung kehidupan digital modern[cite: 2].
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-16 flex-grow">
+      <!-- 1. Definisi & Pendahuluan -->
+      <section id="definisi" class="scroll-mt-20">
+        <div
+          class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm grid md:grid-cols-2 gap-0"
+        >
+          <div class="p-8 flex flex-col justify-center space-y-4">
+            <span
+              class="text-xs font-bold text-brand-600 uppercase tracking-widest"
+              >Konsep Dasar</span
+            >
+            <h2 class="text-2xl font-bold text-slate-900">
+              Apa itu Informatika?
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              <strong>Informatika</strong> adalah cabang ilmu yang mempelajari
+              pengolahan data dengan menggunakan komputer[cite: 2]. Bidang ini
+              merangkum penerapan teknologi informasi dan komunikasi untuk
+              mengelola, menyimpan, memproses, dan mentransmisikan
+              informasi[cite: 2].
+            </p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Informatika juga mencakup pemahaman manusia terhadap informasi
+              serta dampaknya terhadap masyarakat dan lingkungan[cite: 2].
+            </p>
+            <div
+              class="bg-brand-50 p-4 rounded-2xl border border-brand-100 flex items-start gap-3"
+            >
+              <span class="material-symbols-outlined text-brand-600 text-2xl"
+                >smart_toy</span
+              >
+              <p class="text-xs text-brand-900 leading-relaxed">
+                <strong>Tren Modern:</strong> Informatika kini berkembang pesat
+                mencakup <em>Artificial Intelligence (AI)</em>,
+                <em>Machine Learning</em>, hingga analisis
+                <em>Big Data</em>[cite: 2].
+              </p>
+            </div>
+          </div>
+          <div class="h-64 md:h-auto overflow-hidden relative">
+            <img
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+              alt="Informatika & Pembelajaran"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. 4 Cakupan Utama Informatika (Dengan Visual Gambar) -->
+      <section id="cabang" class="scroll-mt-20">
+        <div class="flex items-center justify-between mb-8">
+          <div>
+            <span
+              class="text-xs font-bold text-brand-600 uppercase tracking-widest"
+              >Struktur Keilmuan</span
+            >
+            <h2 class="text-2xl font-bold text-slate-900">
+              4 Cakupan Utama Informatika
+            </h2>
+          </div>
+          <span
+            class="material-symbols-outlined bg-brand-50 text-brand-600 p-3 rounded-2xl"
+            >hub</span
+          >
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Cabang 1: Ilmu Komputer -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between group"
+          >
+            <div>
+              <div class="h-36 overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+                  alt="Ilmu Komputer"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-sky-600 text-white text-[10px] font-bold px-2 py-0.5 rounded"
+                  >1. Ilmu Komputer</span
+                >
+              </div>
+              <div class="p-5">
+                <p class="text-xs text-slate-600 leading-relaxed mb-2">
+                  Mempelajari teori, desain, pengembangan, dan aplikasi software
+                  & hardware (algoritma, struktur data, OS, AI)[cite: 2].
+                </p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <span
+                class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block border-t border-slate-100 pt-3"
+                >Computer Science</span
+              >
+            </div>
+          </div>
+
+          <!-- Cabang 2: Teknologi Informasi -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between group"
+          >
+            <div>
+              <div class="h-36 overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80"
+                  alt="Teknologi Informasi"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded"
+                  >2. Teknologi Informasi</span
+                >
+              </div>
+              <div class="p-5">
+                <p class="text-xs text-slate-600 leading-relaxed mb-2">
+                  Berfokus pada pengembangan, implementasi, dan pengelolaan
+                  sistem berbasis komputer untuk organisasi[cite: 2].
+                </p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <span
+                class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block border-t border-slate-100 pt-3"
+                >Information Technology</span
+              >
+            </div>
+          </div>
+
+          <!-- Cabang 3: Sistem Informasi -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between group"
+          >
+            <div>
+              <div class="h-36 overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
+                  alt="Sistem Informasi"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-0.5 rounded"
+                  >3. Sistem Informasi</span
+                >
+              </div>
+              <div class="p-5">
+                <p class="text-xs text-slate-600 leading-relaxed mb-2">
+                  Mempelajari integrasi teknologi ke dalam organisasi untuk
+                  mencapai tujuan bisnis dan efisiensi[cite: 2].
+                </p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <span
+                class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block border-t border-slate-100 pt-3"
+                >Information Systems</span
+              >
+            </div>
+          </div>
+
+          <!-- Cabang 4: Rekayasa Perangkat Lunak -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between group"
+          >
+            <div>
+              <div class="h-36 overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80"
+                  alt="Rekayasa Perangkat Lunak"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded"
+                  >4. Rekayasa Perangkat Lunak</span
+                >
+              </div>
+              <div class="p-5">
+                <p class="text-xs text-slate-600 leading-relaxed mb-2">
+                  Berfokus pada produksi software: perancangan, pengembangan,
+                  pengujian, dan pemeliharaan aplikasi[cite: 2].
+                </p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <span
+                class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block border-t border-slate-100 pt-3"
+                >Software Engineering</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. 6 Aspek Praktis Informatika (Dengan Visual Gambar Grid) -->
+      <section id="aspek" class="scroll-mt-20">
+        <div class="flex items-center justify-between mb-8">
+          <div>
+            <span
+              class="text-xs font-bold text-brand-600 uppercase tracking-widest"
+              >Penerapan Praktis</span
+            >
+            <h2 class="text-2xl font-bold text-slate-900">
+              6 Aspek Praktis Informatika
+            </h2>
+          </div>
+          <span
+            class="material-symbols-outlined bg-brand-50 text-brand-600 p-3 rounded-2xl"
+            >grid_view</span
+          >
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Aspek 1 -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group"
+          >
+            <div class="h-32 overflow-hidden relative">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+                alt="Pemrosesan Informasi"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+              <span
+                class="absolute bottom-2 left-2 bg-slate-900/80 backdrop-blur-md text-white font-bold text-[11px] px-2.5 py-1 rounded-lg"
+                >1. Pemrosesan Informasi</span
+              >
+            </div>
+            <div class="p-4">
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Pengumpulan, penyusunan, pengolahan, dan penyampaian informasi
+                secara efisien[cite: 2].
+              </p>
+            </div>
+          </div>
+
+          <!-- Aspek 2 -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group"
+          >
+            <div class="h-32 overflow-hidden relative">
+              <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+                alt="Teknologi Informasi"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+              <span
+                class="absolute bottom-2 left-2 bg-slate-900/80 backdrop-blur-md text-white font-bold text-[11px] px-2.5 py-1 rounded-lg"
+                >2. Teknologi Informasi</span
+              >
+            </div>
+            <div class="p-4">
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Penggunaan komputer, perangkat mobile, dan infrastruktur
+                jaringan untuk akses data[cite: 2].
+              </p>
+            </div>
+          </div>
+
+          <!-- Aspek 3 -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group"
+          >
+            <div class="h-32 overflow-hidden relative">
+              <img
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80"
+                alt="Pengelolaan Basis Data"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+              <span
+                class="absolute bottom-2 left-2 bg-slate-900/80 backdrop-blur-md text-white font-bold text-[11px] px-2.5 py-1 rounded-lg"
+                >3. Pengelolaan Basis Data</span
+              >
+            </div>
+            <div class="p-4">
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Penyimpanan informasi terstruktur agar mudah diakses, dikelola,
+                dan dianalisis[cite: 2].
+              </p>
+            </div>
+          </div>
+
+          <!-- Aspek 4 -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group"
+          >
+            <div class="h-32 overflow-hidden relative">
+              <img
+                src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=600&q=80"
+                alt="Interaksi Manusia dan Komputer"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+              <span
+                class="absolute bottom-2 left-2 bg-slate-900/80 backdrop-blur-md text-white font-bold text-[11px] px-2.5 py-1 rounded-lg"
+                >4. Interaksi Manusia & Komputer</span
+              >
+            </div>
+            <div class="p-4">
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Memperhatikan cara manusia berinteraksi dengan komputer dan
+                desain antarmuka[cite: 2].
+              </p>
+            </div>
+          </div>
+
+          <!-- Aspek 5 -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group"
+          >
+            <div class="h-32 overflow-hidden relative">
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80"
+                alt="Dampak Sosial dan Etika"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+              <span
+                class="absolute bottom-2 left-2 bg-slate-900/80 backdrop-blur-md text-white font-bold text-[11px] px-2.5 py-1 rounded-lg"
+                >5. Dampak Sosial & Etika</span
+              >
+            </div>
+            <div class="p-4">
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Menganalisis pengaruh teknologi pada cara bekerja/berkomunikasi
+                serta aspek etika[cite: 2].
+              </p>
+            </div>
+          </div>
+
+          <!-- Aspek 6 -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition group"
+          >
+            <div class="h-32 overflow-hidden relative">
+              <img
+                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80"
+                alt="Keamanan Informasi"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+              <span
+                class="absolute bottom-2 left-2 bg-slate-900/80 backdrop-blur-md text-white font-bold text-[11px] px-2.5 py-1 rounded-lg"
+                >6. Keamanan Informasi</span
+              >
+            </div>
+            <div class="p-4">
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Melindungi informasi dari akses, perubahan, atau penghancuran
+                yang tidak sah[cite: 2].
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Konteks PJJ dalam Pembelajaran -->
+      <section id="pjj" class="scroll-mt-20">
+        <div
+          class="bg-slate-900 text-white rounded-3xl p-8 shadow-xl overflow-hidden relative"
+        >
+          <div class="relative z-10 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4">
+              <span
+                class="bg-brand-500 text-white font-bold text-[11px] px-3 py-1 rounded-full uppercase tracking-wider"
+                >Contoh Penerapan Nyata</span
+              >
+              <h2 class="text-2xl font-bold">
+                Informatika dalam PJJ (Pandemi COVID-19)
+              </h2>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                Selama masa pandemi COVID-19, pembelajaran jarak jauh (PJJ)
+                sangat ditopang oleh teknologi digital dan jaringan
+                internet[cite: 2].
+              </p>
+              <div class="space-y-2 text-xs text-slate-300">
+                <div
+                  class="flex items-center gap-2 bg-slate-800/80 p-3 rounded-xl border border-slate-700"
+                >
+                  <span class="material-symbols-outlined text-sky-400"
+                    >devices</span
+                  >
+                  <span
+                    ><strong>Perangkat Keras:</strong> Komputer, laptop, dan
+                    ponsel cerdas[cite: 2].</span
+                  >
+                </div>
+                <div
+                  class="flex items-center gap-2 bg-slate-800/80 p-3 rounded-xl border border-slate-700"
+                >
+                  <span class="material-symbols-outlined text-emerald-400"
+                    >apps</span
+                  >
+                  <span
+                    ><strong>Perangkat Lunak/Aplikasi:</strong> WhatsApp, Zoom,
+                    Google Meet, dan Google Classroom[cite: 2].</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="rounded-2xl overflow-hidden border border-slate-700 shadow-2xl"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&w=800&q=80"
+                alt="Siswa Belajar PJJ"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-slate-900 text-slate-400 py-6 border-t border-slate-800 text-center text-xs"
+    >
+      <p>
+        © 2026 Media Pembelajaran Informatika Kelas XII (Fase F) — Materi Bagian
+        A[cite: 2]
+      </p>
+    </footer>
+  </body>
+</html>
