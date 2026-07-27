@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petunjuk LKPD 1.2 - Analisis Kasus Kejahatan Siber</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#f0f9ff",
+                100: "#e0f2fe",
+                500: "#0ea5e9",
+                600: "#0284c7",
+                700: "#0369a1",
+                900: "#0c4a6e",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Font Plus Jakarta Sans & Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-slate-100 text-slate-800 antialiased min-h-screen flex flex-col justify-between"
+  >
+    <!-- Header / Navbar -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+      <div
+        class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="bg-brand-600 text-white p-2 rounded-xl flex items-center justify-center shadow-sm"
+          >
+            <span class="material-symbols-outlined text-xl">security</span>
+          </div>
+          <div>
+            <span class="font-bold text-base text-slate-900 leading-none block"
+              >Petunjuk LKPD 1.2</span
+            >
+            <span
+              class="text-[10px] text-brand-600 font-semibold uppercase tracking-wider"
+              >Format Pengerjaan Buku Tulis</span
+            >
+          </div>
+        </div>
+        <span
+          class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 border border-amber-200"
+        >
+          <span class="material-symbols-outlined text-sm">edit_note</span>
+          Kerjakan di Buku Tulis
+        </span>
+      </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-4 py-8 space-y-8 flex-grow w-full">
+      <!-- Card Banner Judul Utama (Wallpaper Image + Gradient Harmonis Cybersecurity) -->
+      <div
+        class="relative bg-slate-900 rounded-3xl p-6 sm:p-8 shadow-lg overflow-hidden text-white border border-slate-800"
+      >
+        <!-- Background Image Wallpaper (Cybersecurity Theme) -->
+        <img
+          src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
+          alt="Cybersecurity Background"
+          class="absolute inset-0 w-full h-full object-cover opacity-25"
+        />
+        <!-- Gradient Overlay Harmonis -->
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-slate-950 via-sky-950/90 to-brand-900/80"
+        ></div>
+
+        <div class="relative z-10 space-y-3 max-w-2xl">
+          <span
+            class="bg-brand-500/20 text-brand-300 border border-brand-400/30 text-[11px] font-bold px-3 py-1 rounded-full inline-block uppercase tracking-wider"
+          >
+            INFORMATIKA KELAS XII (FASE F)
+          </span>
+          <h1
+            class="text-2xl sm:text-3xl font-extrabold text-white leading-tight"
+          >
+            Panduan LKPD Aktivitas 1.2
+          </h1>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Halaman ini merupakan <strong>petunjuk bacaan</strong>. Silakan baca
+            artikel studi kasus kejahatan siber di bawah ini, salin format
+            identitas, lalu jawab pertanyaan diskusi bersama teman semejamu di
+            <strong>buku tulis Informatika</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Format Identitas untuk Buku Tulis -->
+      <div
+        class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-3"
+      >
+        <h3
+          class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5"
+        >
+          <span class="material-symbols-outlined text-brand-600 text-base"
+            >badge</span
+          >
+          Contoh Format Header / Identitas di Buku Tulis:
+        </h3>
+
+        <div
+          class="bg-gradient-to-br from-sky-50 via-white to-blue-50 border border-sky-200 p-5 rounded-2xl font-mono text-xs text-slate-800 shadow-sm space-y-3 relative overflow-hidden"
+        >
+          <div class="absolute -right-4 -bottom-4 opacity-5 text-brand-900">
+            <span class="material-symbols-outlined text-8xl">shield_lock</span>
+          </div>
+
+          <div
+            class="border-b border-sky-200 pb-2 font-bold text-brand-700 text-sm tracking-wide"
+          >
+            Aktivitas 1.2 - Analisis Kasus Kejahatan Siber
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-3 pt-1">
+            <div class="bg-white/80 p-2.5 rounded-xl border border-sky-100">
+              <span
+                class="text-[10px] text-slate-400 block uppercase font-sans font-bold"
+                >Nama Siswa:</span
+              >
+              <span class="font-semibold text-slate-800"
+                >[Nama Lengkap Anda]</span
+              >
+            </div>
+            <div class="bg-white/80 p-2.5 rounded-xl border border-sky-100">
+              <span
+                class="text-[10px] text-slate-400 block uppercase font-sans font-bold"
+                >Teman Semeja:</span
+              >
+              <span class="font-semibold text-slate-800"
+                >[Nama Teman Semeja]</span
+              >
+            </div>
+            <div class="bg-white/80 p-2.5 rounded-xl border border-sky-100">
+              <span
+                class="text-[10px] text-slate-400 block uppercase font-sans font-bold"
+                >Kelas:</span
+              >
+              <span class="font-semibold text-slate-800">[Kelas Anda]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 1: TEKS BACAAN KASUS KEJAHATAN SIBER -->
+      <div
+        class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6"
+      >
+        <div
+          class="flex items-center justify-between border-b border-slate-100 pb-4"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 bg-brand-100 text-brand-700 rounded-xl flex items-center justify-center font-bold text-lg"
+            >
+              1
+            </div>
+            <div>
+              <span
+                class="text-[10px] font-bold text-brand-600 uppercase tracking-widest"
+                >Bahan Bacaan & Analisis</span
+              >
+              <h2 class="text-xl font-bold text-slate-900">
+                Artikel Studi Kasus Kejahatan Siber
+              </h2>
+            </div>
+          </div>
+          <span class="material-symbols-outlined text-brand-600 text-3xl"
+            >article</span
+          >
+        </div>
+
+        <!-- Box Artikel Teks Berita -->
+        <div
+          class="bg-slate-50 border border-slate-200 rounded-2xl p-5 sm:p-6 space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed"
+        >
+          <div class="text-center border-b border-slate-200 pb-3">
+            <span
+              class="bg-red-100 text-red-800 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase"
+              >Isu Keamanan Digital</span
+            >
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 mt-1">
+              Kejahatan Siber Modus Penipuan Undangan Pernikahan APK
+            </h3>
+          </div>
+
+          <p>
+            Belakangan ramai di media sosial kasus kejahatan siber modus
+            penipuan berkedok undangan pernikahan dengan format APK. Undangan
+            dengan format ini banyak beredar di aplikasi WhatsApp dan berisiko
+            terjadi pembobolan rekening. Pakar dari lembaga riset siber
+            <em>Communication & Information System Security Research Center</em>
+            (CISSReC), Pratama Persadha mengatakan modus ini dilakukan oleh
+            pelaku melalui pendekatan atau <em>social engineering</em> kepada
+            korban agar mengunduh dan menginstal file APK yang mereka kirimkan.
+          </p>
+
+          <blockquote
+            class="bg-white border-l-4 border-brand-500 p-3 italic text-slate-600 rounded-r-xl my-2"
+          >
+            "Sebagai langkah pencegahan, bagi masyarakat yang sudah pernah
+            menginstal APK dari para pelaku, sebaiknya melakukan factory reset
+            pada ponsel pintarnya," kata Pratama, Senin (30/1/2023).
+          </blockquote>
+
+          <p>
+            Dia menjelaskan, reset atau <em>factory reset</em> merupakan proses
+            untuk mengembalikan HP ke pengaturan bawaan seperti dari pabriknya.
+            Adapun fungsi reset ini, sambung Pratama, dapat mengatasi beberapa
+            masalah pada ponsel termasuk membersihkan cache, virus, serta
+            <em>malware</em>. Namun bila <em>phishing</em> menggunakan
+            <em>malware</em> yang relatif kuat, satu-satunya pilihan yang dapat
+            dilakukan masyarakat adalah mengganti ponsel pintar yang mereka
+            gunakan. Prinsipnya jangan klik link dari orang asing. Jadi, kita
+            tidak perlu memikirkan apakah file tersebut asli atau file
+            <em>phishing</em>, tegas Pratama.
+          </p>
+
+          <p>
+            Lebih lanjut terkait modus penipuan ini, Pratama melihat faktor
+            utamanya adalah ketidakfahaman masyarakat dan hebatnya pelaku
+            melakukan <em>social engineering</em> dalam hal ini meyakinkan calon
+            korbannya untuk mengeklik dan menginstal aplikasi berisi
+            <em>exploit</em> (kode yang menyerang keamanan komputer secara
+            spesifik) yang dikirimkan.
+          </p>
+
+          <p>
+            Padahal, sambungnya, setelah aplikasi terinstal, para pelaku dapat
+            mengambil berbagai data dan mendorong para korban, misalnya untuk
+            membuka aplikasi <em>internet banking</em>, sehingga pelaku dapat
+            mulai mengeruk uang korban.
+          </p>
+
+          <p class="font-medium text-slate-800">
+            "Hal yang patut dicatat dan menjadi sangat penting adalah pemerintah
+            dan perbankan harus melakukan edukasi, karena tindak kejahatan ini
+            langsung ke masyarakat," ucap Pratama.
+          </p>
+
+          <div
+            class="pt-3 border-t border-slate-200 text-[11px] text-slate-500 italic"
+          >
+            Sumber: Rahmi Yati,
+            <em>Terlanjur Buka Undangan Nikah Format APK, Ini Solusinya</em>.
+            Diunggah pada 30 Januari 2023 di bisnis.com.
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: TUGAS LATIHAN 1.2 (3 SOAL DISKUSI) -->
+      <div
+        class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6"
+      >
+        <div
+          class="flex items-center justify-between border-b border-slate-100 pb-4"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-lg"
+            >
+              2
+            </div>
+            <div>
+              <span
+                class="text-[10px] font-bold text-emerald-600 uppercase tracking-widest"
+                >Tugas Diskusi Semeja</span
+              >
+              <h2 class="text-xl font-bold text-slate-900">Soal Latihan 1.2</h2>
+            </div>
+          </div>
+          <span class="material-symbols-outlined text-emerald-600 text-3xl"
+            >forum</span
+          >
+        </div>
+
+        <p class="text-xs text-slate-600 leading-relaxed">
+          Setelah membaca teks berita di atas, diskusikan permasalahan berikut
+          bersama teman semejamu, lalu
+          <strong>salin soal dan tuliskan jawabannya</strong> secara lengkap di
+          buku tulis Informatika masing-masing.
+        </p>
+
+        <!-- Daftar Soal Diskusi -->
+        <div class="space-y-4">
+          <!-- Soal 1 -->
+          <div
+            class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-2"
+          >
+            <div class="flex items-start gap-2">
+              <span
+                class="bg-emerald-600 text-white font-bold text-[10px] px-2 py-0.5 rounded"
+                >Soal 1</span
+              >
+              <h3
+                class="font-bold text-xs sm:text-sm text-slate-900 leading-relaxed"
+              >
+                Permasalahan apa yang terdapat dalam teks di atas yang terkait
+                dengan literasi digital?
+              </h3>
+            </div>
+            <p class="text-[11px] text-slate-600 pl-8 leading-relaxed">
+              <strong class="text-slate-800">Petunjuk Detail Soal:</strong>
+              Cermati artikel kemudian petakan jenis modus kejahatan yang
+              terjadi, media komunikasi yang dimanfaatkan oleh pelaku, teknik
+              psikologis yang mereka gunakan, serta ancaman kerugian nyata yang
+              dihadapi oleh korban.
+            </p>
+          </div>
+
+          <!-- Soal 2 -->
+          <div
+            class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-2"
+          >
+            <div class="flex items-start gap-2">
+              <span
+                class="bg-emerald-600 text-white font-bold text-[10px] px-2 py-0.5 rounded"
+                >Soal 2</span
+              >
+              <h3
+                class="font-bold text-xs sm:text-sm text-slate-900 leading-relaxed"
+              >
+                Aspek literasi digital apakah yang perlu dikuatkan untuk dapat
+                mengatasi masalah yang timbul dalam teks?
+              </h3>
+            </div>
+            <p class="text-[11px] text-slate-600 pl-8 leading-relaxed">
+              <strong class="text-slate-800">Petunjuk Detail Soal:</strong>
+              Hubungkan kasus pada teks dengan pilar-pilar utama literasi
+              digital. Kaitkan pilar manakah yang paling krusial ditingkatkan
+              agar masyarakat tidak mudah terkecoh oleh pesan bermodus serupa.
+            </p>
+          </div>
+
+          <!-- Soal 3 -->
+          <div
+            class="p-4 bg-slate-50 rounded-xl border border-slate-200 space-y-2"
+          >
+            <div class="flex items-start gap-2">
+              <span
+                class="bg-emerald-600 text-white font-bold text-[10px] px-2 py-0.5 rounded"
+                >Soal 3</span
+              >
+              <h3
+                class="font-bold text-xs sm:text-sm text-slate-900 leading-relaxed"
+              >
+                Apa saran yang dapat kamu usulkan agar kita tidak terkena dampak
+                dari masalah seperti dalam teks?
+              </h3>
+            </div>
+            <p class="text-[11px] text-slate-600 pl-8 leading-relaxed">
+              <strong class="text-slate-800">Petunjuk Detail Soal:</strong>
+              Tuliskan minimal 3 saran tindakan nyata secara runtut, baik dari
+              sudut pandang tindakan pencegahan pribadi (*preventif*), tindakan
+              teknis penanganan jika terlanjur mengklik, maupun peran edukasi di
+              lingkungan sekitar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: PETUNJUK PENGUMPULAN KE GOOGLE CLASSROOM -->
+      <div
+        class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6"
+      >
+        <div
+          class="flex items-center justify-between border-b border-slate-100 pb-4"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 bg-purple-100 text-purple-700 rounded-xl flex items-center justify-center font-bold text-lg"
+            >
+              3
+            </div>
+            <div>
+              <span
+                class="text-[10px] font-bold text-purple-600 uppercase tracking-widest"
+                >Pengumpulan Digital</span
+              >
+              <h2 class="text-xl font-bold text-slate-900">
+                Petunjuk Upload ke Google Classroom
+              </h2>
+            </div>
+          </div>
+          <span class="material-symbols-outlined text-purple-600 text-3xl"
+            >cloud_upload</span
+          >
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-4 text-xs">
+          <!-- Langkah 1 -->
+          <div
+            class="p-4 bg-purple-50/60 rounded-xl border border-purple-100 space-y-2"
+          >
+            <div
+              class="w-7 h-7 bg-purple-600 text-white rounded-lg flex items-center justify-center font-bold text-xs"
+            >
+              1
+            </div>
+            <h3 class="font-bold text-slate-900 text-xs">
+              Foto / Scan Pekerjaan
+            </h3>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              Ambil foto halaman buku tulis Anda (Format Identitas & Jawaban
+              Soal 1-3) secara tegak lurus, pencahayaan terang, dan dipastikan
+              tulisan dapat terbaca dengan jelas.
+            </p>
+          </div>
+
+          <!-- Langkah 2 -->
+          <div
+            class="p-4 bg-purple-50/60 rounded-xl border border-purple-100 space-y-2"
+          >
+            <div
+              class="w-7 h-7 bg-purple-600 text-white rounded-lg flex items-center justify-center font-bold text-xs"
+            >
+              2
+            </div>
+            <h3 class="font-bold text-slate-900 text-xs">
+              Format File (JPG / PDF)
+            </h3>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              Jika pengerjaan terdiri lebih dari 1 halaman, gabungkan foto
+              menjadi 1 file PDF atau pastikan seluruh foto halaman terlampir
+              lengkap.
+            </p>
+          </div>
+
+          <!-- Langkah 3 -->
+          <div
+            class="p-4 bg-purple-50/60 rounded-xl border border-purple-100 space-y-2"
+          >
+            <div
+              class="w-7 h-7 bg-purple-600 text-white rounded-lg flex items-center justify-center font-bold text-xs"
+            >
+              3
+            </div>
+            <h3 class="font-bold text-slate-900 text-xs">Unggah & Serahkan</h3>
+            <p class="text-slate-600 text-[11px] leading-relaxed">
+              Buka tugas
+              <strong>"Aktivitas 1.2 - Analisis Kasus Kejahatan Siber"</strong>
+              di Google Classroom, lampirkan file Anda, lalu klik tombol
+              <strong>Serahkan / Turn In</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="p-3 bg-slate-900 text-white rounded-xl flex items-center justify-between text-xs"
+        >
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-amber-400 text-lg"
+              >info</span
+            >
+            <span
+              >Pastikan klik tombol <strong>"Serahkan" (Turn In)</strong> agar
+              tugas terdata di sistem.</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500"
+    >
+      <p>
+        © 2026 Petunjuk Pembelajaran Informatika Kelas XII — Petunjuk Praktis
+        LKPD Aktivitas 1.2
+      </p>
+    </footer>
+  </body>
+</html>
