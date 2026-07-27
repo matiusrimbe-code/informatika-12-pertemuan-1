@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 2: Literasi Digital - Kelas XII</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#f0fdf4",
+                100: "#dcfce7",
+                500: "#10b981",
+                600: "#059669",
+                700: "#047857",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Font Plus Jakarta Sans & Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between"
+  >
+    <!-- Header / Navbar -->
+    <header
+      class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="bg-brand-600 text-white p-2 rounded-xl flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-xl">verified_user</span>
+          </div>
+          <div>
+            <span
+              class="font-bold text-lg text-slate-900 tracking-tight block leading-none"
+              >Informatika XII</span
+            >
+            <span
+              class="text-[10px] text-brand-600 font-semibold uppercase tracking-wider"
+              >Bagian B: Literasi Digital</span
+            >
+          </div>
+          <span
+            class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-0.5 rounded-full ml-2"
+            >Fase F</span
+          >
+        </div>
+        <nav class="hidden md:flex gap-6 text-sm font-semibold text-slate-600">
+          <a href="#definisi" class="hover:text-brand-600 transition"
+            >Pengertian</a
+          >
+          <a href="#cakupan" class="hover:text-brand-600 transition"
+            >5 Hal Utama</a
+          >
+          <a href="#manfaat" class="hover:text-brand-600 transition"
+            >Manfaat & Peran</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-slate-900 text-white overflow-hidden py-16 px-4"
+    >
+      <div class="absolute inset-0 opacity-30">
+        <img
+          src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1600&q=80"
+          alt="Literasi Digital"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/95 to-transparent"
+      ></div>
+
+      <div
+        class="relative max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8"
+      >
+        <div class="space-y-4 md:w-3/4">
+          <span
+            class="bg-brand-500/20 text-brand-300 border border-brand-400/30 text-xs font-bold px-3 py-1 rounded-full inline-flex items-center gap-1 uppercase tracking-wider"
+          >
+            <span class="material-symbols-outlined text-sm">shield</span> Modul
+            Pembelajaran Bagian B
+          </span>
+          <h1
+            class="text-3xl md:text-5xl font-extrabold leading-tight text-white"
+          >
+            Cerdas & Bijak di Era
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300"
+              >Literasi Digital</span
+            >
+          </h1>
+          <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            Meningkatkan keterampilan berpartisipasi secara efektif, aman, dan
+            bertanggung jawab di dalam dunia digital yang terus berkembang.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-16 flex-grow">
+      <!-- 1. Definisi Literasi Digital -->
+      <section id="definisi" class="scroll-mt-20">
+        <div
+          class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm grid md:grid-cols-2 gap-0"
+        >
+          <div class="p-8 flex flex-col justify-center space-y-4">
+            <span
+              class="text-xs font-bold text-brand-600 uppercase tracking-widest"
+              >Konsep Utama</span
+            >
+            <h2 class="text-2xl font-bold text-slate-900">
+              Apa itu Literasi Digital?
+            </h2>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              <strong>Literasi digital</strong> merujuk pada kemampuan individu
+              untuk mengakses, mengevaluasi, dan berpartisipasi secara efektif
+              dalam dunia digital. Hal ini melibatkan pemahaman cara kerja
+              teknologi digital, seperti komputer, internet, media sosial,
+              perangkat seluler, serta berbagai aplikasi.
+            </p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Literasi digital
+              <strong>tidak hanya tentang keterampilan teknis semata</strong>.
+              Lebih dari itu, literasi digital mencakup kemampuan untuk memahami
+              dan mengevaluasi informasi secara kritis serta berinteraksi secara
+              positif dengan lingkungan digital.
+            </p>
+            <div
+              class="bg-emerald-50 p-4 rounded-2xl border border-emerald-100 flex items-start gap-3"
+            >
+              <span class="material-symbols-outlined text-brand-600 text-2xl"
+                >verified</span
+              >
+              <p class="text-xs text-brand-900 leading-relaxed">
+                <strong>Peran Penting:</strong> Memiliki literasi digital yang
+                memadai memungkinkan kita berpartisipasi secara efektif, aman,
+                dan bertanggung jawab dalam dunia digital yang terus berkembang.
+              </p>
+            </div>
+          </div>
+          <div class="h-64 md:h-auto overflow-hidden relative">
+            <img
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+              alt="Diskusi Literasi Digital"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. 5 Hal yang Tercakup dalam Literasi Digital -->
+      <section id="cakupan" class="scroll-mt-20">
+        <div class="flex items-center justify-between mb-8">
+          <div>
+            <span
+              class="text-xs font-bold text-brand-600 uppercase tracking-widest"
+              >Kerangka Materi Buku Teks</span
+            >
+            <h2 class="text-2xl font-bold text-slate-900">
+              5 Hal Utama dalam Literasi Digital
+            </h2>
+          </div>
+          <span
+            class="material-symbols-outlined bg-emerald-50 text-brand-600 p-3 rounded-2xl"
+            >checklist</span
+          >
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Poin 1 -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between group"
+          >
+            <div>
+              <div class="h-36 overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+                  alt="Pemahaman Teknologi Digital"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-sky-600 text-white text-[10px] font-bold px-2 py-0.5 rounded"
+                  >Poin 1</span
+                >
+              </div>
+              <div class="p-5">
+                <h3 class="font-bold text-slate-900 text-base mb-1">
+                  1. Pemahaman Teknologi Digital
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Pengetahuan tentang penggunaan perangkat keras (komputer,
+                  tablet, smartphone), perangkat lunak/aplikasi, jaringan
+                  internet, keamanan digital, serta perlindungan data pribadi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Poin 2 -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between group"
+          >
+            <div>
+              <div class="h-36 overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80"
+                  alt="Evaluasi Informasi"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded"
+                  >Poin 2</span
+                >
+              </div>
+              <div class="p-5">
+                <h3 class="font-bold text-slate-900 text-base mb-1">
+                  2. Evaluasi Informasi
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Kemampuan memilah informasi secara kritis, mengidentifikasi
+                  sumber terpercaya, mengenali hoaks atau berita palsu, serta
+                  mengkritisi konten yang dipresentasikan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Poin 3 -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between group"
+          >
+            <div>
+              <div class="h-36 overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80"
+                  alt="Kreativitas dan Kolaborasi"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-purple-600 text-white text-[10px] font-bold px-2 py-0.5 rounded"
+                  >Poin 3</span
+                >
+              </div>
+              <div class="p-5">
+                <h3 class="font-bold text-slate-900 text-base mb-1">
+                  3. Kreativitas & Kolaborasi
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Kemampuan membuat konten digital (teks, gambar, audio, video)
+                  dan berkolaborasi dengan orang lain secara online dalam
+                  konteks belajar, pekerjaan, maupun proyek kreatif.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Poin 4 -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between group"
+          >
+            <div>
+              <div class="h-36 overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80"
+                  alt="Etika Digital"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded"
+                  >Poin 4</span
+                >
+              </div>
+              <div class="p-5">
+                <h3 class="font-bold text-slate-900 text-base mb-1">
+                  4. Etika Digital & Tanggung Jawab
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Penerapan perilaku sopan dan menghormati orang lain dalam
+                  komunikasi online, pemahaman hak cipta dan privasi, serta
+                  kesadaran akan dampak sosial dari aktivitas online.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Poin 5 -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between group md:col-span-2 lg:col-span-2"
+          >
+            <div>
+              <div class="h-36 overflow-hidden relative">
+                <img
+                  src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80"
+                  alt="Keamanan Digital & Phishing"
+                  class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-rose-600 text-white text-[10px] font-bold px-2 py-0.5 rounded"
+                  >Poin 5</span
+                >
+              </div>
+              <div class="p-5">
+                <h3 class="font-bold text-slate-900 text-base mb-1">
+                  5. Keamanan Digital & Ancaman Phishing
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed mb-3">
+                  Mengamankan akun online, menghindari penipuan, dan memahami
+                  risiko berbagi informasi pribadi.
+                </p>
+                <div
+                  class="bg-rose-50 p-3 rounded-xl border border-rose-100 text-xs text-rose-900 leading-relaxed"
+                >
+                  <strong>Istilah Penting — Phishing (Memancing):</strong>
+                  Phishing berasal dari bahasa Inggris <em>"fishing"</em>.
+                  Phishing adalah upaya mendapatkan data seseorang melalui
+                  teknik pengelabuan.
+                  <ul class="list-disc list-inside mt-1 font-medium">
+                    <li>Data Pribadi (nama, usia, alamat)</li>
+                    <li>Data Akun (username & password)</li>
+                    <li>Data Finansial (informasi kartu kredit, rekening)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Manfaat Memiliki Literasi Digital yang Kuat (Ref: Paragraf Penutup Buku Teks) -->
+      <section id="manfaat" class="scroll-mt-20">
+        <div
+          class="bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-950 text-white rounded-3xl p-8 shadow-xl relative overflow-hidden"
+        >
+          <div
+            class="flex items-center justify-between mb-8 border-b border-slate-700/80 pb-4"
+          >
+            <div>
+              <span
+                class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+                >Kesimpulan Materi</span
+              >
+              <h2 class="text-2xl md:text-3xl font-extrabold mt-2 text-white">
+                Manfaat Memiliki Literasi Digital yang Kuat
+              </h2>
+            </div>
+            <span class="material-symbols-outlined text-emerald-400 text-4xl"
+              >rocket_launch</span
+            >
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6 items-stretch">
+            <!-- Kartu Manfaat 1 -->
+            <div
+              class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 flex flex-col justify-between space-y-4"
+            >
+              <div class="space-y-3">
+                <div
+                  class="w-10 h-10 bg-emerald-500/20 text-emerald-400 rounded-xl flex items-center justify-center font-bold"
+                >
+                  <span class="material-symbols-outlined">psychology</span>
+                </div>
+                <h3 class="font-bold text-lg text-white">
+                  Navigasi Dunia Digital dengan Bijak & Efektif
+                </h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Dengan memiliki literasi digital yang kuat, kita dapat
+                  mengarungi dunia digital dengan lebih bijak dan efektif. Hal
+                  ini memungkinkan kita untuk mengambil manfaat dari berbagai
+                  peluang yang ditawarkan oleh teknologi digital.
+                </p>
+              </div>
+              <span
+                class="text-[11px] font-semibold text-emerald-400 flex items-center gap-1"
+              >
+                <span class="material-symbols-outlined text-sm"
+                  >check_circle</span
+                >
+                Mengoptimalkan Peluang
+              </span>
+            </div>
+
+            <!-- Kartu Manfaat 2 -->
+            <div
+              class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 flex flex-col justify-between space-y-4"
+            >
+              <div class="space-y-3">
+                <div
+                  class="w-10 h-10 bg-amber-500/20 text-amber-400 rounded-xl flex items-center justify-center font-bold"
+                >
+                  <span class="material-symbols-outlined">shield</span>
+                </div>
+                <h3 class="font-bold text-lg text-white">
+                  Kewaspadaan Terhadap Risikoisiko & Tantangan
+                </h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Walaupun memanfaatkan peluang teknologi, individu dengan
+                  literasi digital yang baik akan tetap selalu waspada terhadap
+                  berbagai tantangan dan risiko yang mungkin terjadi di ruang
+                  digital.
+                </p>
+              </div>
+              <span
+                class="text-[11px] font-semibold text-amber-400 flex items-center gap-1"
+              >
+                <span class="material-symbols-outlined text-sm">security</span>
+                Proteksi Mandiri
+              </span>
+            </div>
+          </div>
+
+          <!-- Callout Box: Peran Pendidik dan Masyarakat -->
+          <div
+            class="mt-8 bg-emerald-900/40 border border-emerald-500/30 p-6 rounded-2xl flex flex-col sm:flex-row items-center gap-4"
+          >
+            <div
+              class="p-3 bg-emerald-500 text-slate-900 rounded-2xl flex items-center justify-center font-bold shrink-0"
+            >
+              <span class="material-symbols-outlined text-2xl">groups</span>
+            </div>
+            <div class="space-y-1 text-center sm:text-left">
+              <h4 class="font-bold text-sm text-emerald-300">
+                Tanggung Jawab Bersama di Kehidupan Modern
+              </h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Oleh karena itu, sangat penting bagi
+                <strong>pendidik dan masyarakat secara keseluruhan</strong>
+                untuk mempromosikan literasi digital sebagai bagian penting dari
+                kehidupan modern.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-slate-900 text-slate-400 py-6 border-t border-slate-800 text-center text-xs"
+    >
+      <p>
+        © 2026 Media Pembelajaran Informatika Kelas XII (Fase F) — Materi Bagian
+        B: Literasi Digital
+      </p>
+    </footer>
+  </body>
+</html>
